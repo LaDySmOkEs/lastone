@@ -1,16 +1,13 @@
 // app/[slug]/page.tsx
-import React from "react";
-import Layout from "@/components/Layout"; // Make sure this path is correct
+import Layout from "@/components/Layout";
 
-type Props = {
-  params: {
-    slug: string;
-  };
-};
+interface Props {
+  params: { slug: string };
+}
 
 const TitleMap: Record<string, string> = {
   example: "Example Page",
-  // Add your other slugs here
+  // add more mappings
 };
 
 export default function Page({ params }: Props) {
