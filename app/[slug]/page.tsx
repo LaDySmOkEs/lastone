@@ -12,17 +12,12 @@ const TitleMap: Record<string, string> = {
   contact: "Contact",
 };
 
-export default function Page({ params }: Props) {
-  const name = TitleMap[params.slug] ?? params.slug;
-
+export default function Layout({ children, currentPageName }: { children: React.ReactNode; currentPageName: string }) {
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-2xl font-bold mb-4 text-gray-800">{name}</h2>
-        <p className="text-gray-600">
-          This is a placeholder page for <span className="font-medium">{name}</span>.
-        </p>
-      </div>
+    <div>
+      <header>{currentPageName}</header>
+      <main>{children}</main>
     </div>
   );
 }
+
