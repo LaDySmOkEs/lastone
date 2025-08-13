@@ -7,7 +7,7 @@ interface Props {
 
 const TitleMap: Record<string, string> = {
   example: "Example Page",
-  // add more mappings
+  // ...add other slug-title mappings
 };
 
 export default function Page({ params }: Props) {
