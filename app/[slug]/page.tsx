@@ -1,4 +1,3 @@
-// app/[slug]/page.tsx
 import Layout from "@/components/Layout";
 
 interface Props {
@@ -7,7 +6,8 @@ interface Props {
 
 const TitleMap: Record<string, string> = {
   example: "Example Page",
-  // ...add other slug-title mappings
+  demo: "Demo Page",
+  // Add other slugs and titles here
 };
 
 export default function Page({ params }: Props) {
