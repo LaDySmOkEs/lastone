@@ -1,11 +1,16 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-6">
-      <h1 className="text-4xl font-bold text-blue-600">Due Process AI</h1>
-      <p className="mt-4 max-w-xl text-center text-lg">
-        Navigate legal processes with AI-powered guidance, plain-language explanations, 
-        and document creation — making justice more accessible to everyone.
+    <main>
+      <h2 className="text-xl font-semibold mb-4">
+        Welcome to Due Process AI
+      </h2>
+      <p className="mb-6">
+        This AI assistant helps streamline legal workflows with automated
+        document processing, case tracking, and intelligent suggestions.
       </p>
+      <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+        Get Started
+      </button>
     </main>
-  )
+  );
 }
