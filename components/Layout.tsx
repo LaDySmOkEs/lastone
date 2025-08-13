@@ -2,7 +2,7 @@
 import { ReactNode } from "react";
 
 interface LayoutProps {
-  children: ReactNode;
+  children: ReactNode;        // <- explicitly include children
   currentPageName: string;
 }
 
