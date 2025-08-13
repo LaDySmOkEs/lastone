@@ -1,4 +1,4 @@
-import Layout from "@/components/Layout";
+
 
 type Props = { params: { slug: string } };
 
@@ -32,6 +32,6 @@ export default function Page({ params }: Props) {
         <h2 className="text-xl font-semibold mb-2">{name}</h2>
         <p className="text-slate-600">This is a placeholder for {name}.</p>
       </div>
-    </Layout>
+    <>...</>
   );
 }
